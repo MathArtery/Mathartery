@@ -1,0 +1,156 @@
+<% if (theme.math && theme.math.enable && (page.math !== false)) { %>
+<!-- KaTeX CSS -->
+<link rel="stylesheet" href="<%= theme.katex.css %>" crossorigin="anonymous">
+
+<!-- KaTeX JS -->
+<script defer src="<%= theme.katex.js %>" crossorigin="anonymous"></script>
+<script defer src="<%= theme.katex.autorender %>" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false},
+      {left: '\\[', right: '\\]', display: true}
+    ],
+    macros: {
+      '\\f': '#1f(#2)',
+      '\\RR': '\\mathbb{R}',
+      '\\CC': '\\mathbb{C}',
+      '\\ZZ': '\\mathbb{Z}',
+      '\\NN': '\\mathbb{N}',
+      '\\QQ': '\\mathbb{Q}',
+      '\\cfrac': '\\frac',
+      '\\abs': ['\\left|#1\\right|', 1],
+      '\\norm': ['\\left\\|#1\\right\\|', 1],
+      '\\pmod': ['\\pod{\\text{#1}}', 1],
+      '\\pd': ['\\frac{\\partial #1}{\\partial #2}', 2]
+    },
+    throwOnError: false,
+    strict: false,
+    trust: (context) => ['\\htmlId', '\\href', '\\includegraphics'].includes(context.command),
+    output: 'htmlAndMathml'
+  });">
+</script>
+
+<!-- KaTeX 样式优化 -->
+<style>
+  /* 基础样式 */
+  .katex {
+    font-size: 1.1em !important;
+    text-rendering: auto;
+  }
+  
+  /* 块级公式 */
+  .katex-display {
+    display: block !important;
+    margin: 1.5em 0 !important;
+    text-align: center !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 0.5em 0 !important;
+  }
+  
+  .katex-display > .katex {
+    display: inline-block !important;
+    text-align: initial !important;
+    white-space: nowrap !important;
+    max-width: 100% !important;
+  }
+  
+  /* 矩阵特别处理 */
+  .katex .array {
+    display: inline-table !important;
+    vertical-align: middle !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+  }
+  
+  .katex .array > .col-align-c {
+    text-align: center !important;
+  }
+  
+  .katex .array > .col-align-l {
+    text-align: left !important;
+  }
+  
+  .katex .array > .col-align-r {
+    text-align: right !important;
+  }
+  
+  /* 行列式竖线 */
+  .katex .vlines {
+    border-right: 0.07em solid !important;
+  }
+  
+  .katex .vlines > span {
+    border-right: 0 !important;
+  }
+  
+  /* 行内公式 */
+  .katex-inline {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* 代码块中的数学公式 */
+  pre .katex,
+  code .katex {
+    font-size: 0.9em !important;
+  }
+  
+  /* 响应式处理 */
+  @media (max-width: 768px) {
+    .katex-display {
+      font-size: 0.9em !important;
+      overflow-x: auto !important;
+    }
+    
+    .katex {
+      font-size: 1em !important;
+    }
+  }
+</style>
+
+<!-- 渲染完成后的事件 -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 延迟检查，确保 KaTeX 加载完成
+    setTimeout(function() {
+      if (typeof renderMathInElement === 'function') {
+        // 重新渲染一次，确保所有公式都处理了
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError: false
+        });
+        
+        // 修复矩阵显示
+        fixMatrixDisplay();
+      }
+    }, 500);
+  });
+  
+  function fixMatrixDisplay() {
+    // 查找所有 KaTeX 渲染的元素
+    const katexElements = document.querySelectorAll('.katex');
+    katexElements.forEach(el => {
+      // 检查是否包含数组/矩阵
+      if (el.querySelector('.array')) {
+        el.style.overflowX = 'auto';
+        el.style.display = 'block';
+        
+        // 确保父容器也有正确的样式
+        if (el.parentElement && el.parentElement.classList.contains('katex-display')) {
+          el.parentElement.style.overflowX = 'auto';
+        }
+      }
+    });
+  }
+</script>
+<% } %>

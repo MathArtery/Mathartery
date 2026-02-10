@@ -3,8 +3,9 @@ title: 拉格朗日乘数法在中学数学不等式证明中的应用
 date: 2026-02-02
 tags: [拉格朗日乘数法, 不等式, 中学数学, 数学论文]
 categories: 论文推荐
-mathjax: true  
+math: true  
 ---
+
 <p style="text-align: center;">
 <span style="color:#9966CC">欢迎关注MathArtery，我们将以严谨的学术态度为您分享数学论文</span>
 </p>
@@ -68,6 +69,7 @@ $$
 \frac{\partial L}{\partial a}=\frac{1}{2\sqrt{a+1}+\lambda}
 $$
 类似的，分别对$b$、$\lambda$求偏导，再令三个偏导数等于零得到如下方程组$(6)$
+
 <img src="/Mathartery/tupian/20260205002.png" alt="t2" width="500">
 ---
 *混合偏导*：对第一次偏导后的偏导函数，再次求偏导
@@ -94,16 +96,17 @@ $$
 这个叫做行列式：
 $$
 \begin{vmatrix}
- a & b\\
+ a & b \\
  c & d
 \end{vmatrix}
 $$
 规定这个二行二列行列式有这样的运算：
 $$
 \begin{vmatrix}
- a & b\\
+ a & b \\
  c & d
-\end{vmatrix}=ad-cb
+\end{vmatrix}
+=ad-cb
 $$
 这个叫做矩阵：
 $$
