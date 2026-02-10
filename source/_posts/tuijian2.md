@@ -18,10 +18,10 @@ mathjax: true
 </p>
 
 
-<img src="/tupian/2026-01-25 191739.png" alt="t2" width="500">
+<img src="/Mathartery/tupian/2026-01-25 191739.png" alt="t1" width="500">
 
 
-
+<p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">摘要</span>
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
@@ -47,6 +47,7 @@ mathjax: true
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">注解</span>
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
 </p>
+
 整除是数学中两个自然数之间的一种关系。自然数$a$可以被自然数$b$整除，是指$b$是$a$的约数，且$a$和$b$是整数倍数关系，也就是$a$除以$b$没有余数
 
 到了大学，以上这种关系可以用$b|a$ b表示，即$a$是$b$的倍数，$b$是$a$的因数。
@@ -57,52 +58,57 @@ gcd(a,b)表示最大公约数（Greatest Common Divisor）。它表示两个或�
 lcm(a,b)表示最小公倍数（least common multiple）。它表示两个或多个整数共有倍数中除1外最小的一个。例如，8和12的最小公倍数是2。
  
 同余是指对某两个整数$a$,$b$,若它们除以正整数$m$所得的余数相等，则称$a$,$b$对于模$m$同余，严格来说，存在整数$k$使得
-\begin{equation*}
+
+$$
 a-b=km
-\end{equation*}
+$$
+
 则称$a$，$b$对于除数$m$是同余的。一般记作
-\begin{equation*}
+
+$$
 a\equiv b(mod\quad  m)
-\end{equation*}
+$$
+
 
 在数论中，对正整数n，欧拉函数$\varphi(n)$是小于等于n的正整数中与n互质的数的数目。此函数以其首名研究者欧拉命名，例如$\varphi(8)=4$,因为1、3、5和7均与8互质
 
  欧拉定理（Euler's Theorem）：
 是一个关于同余的性质。欧拉定理表明，若$n,a$为正整数，且$n,a$互素（$n$和$a$的最大公约数为1，即$gcd(a,n)=1$）,则
-\begin{equation*}
+
+$$
 {a}^{\varphi}(n)\equiv  1(mod  \quad n)
-\end{equation*}
+$$
+
+
 <p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">评注</span>
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
 </p>
-<img src="/tupian/2026-01-26 152623.png" alt="t2" width="500">
+
+<img src="/Mathartery/tupian/2026-01-26 152623.png" alt="t2" width="500">
 
 解法一：由题意设所求之数为$x$，可得 $x ≡2$( mod$3$) ，$x≡1$( mod$5$) ，$x≡6$( mod$7$)。
 
-由 $x≡2$( mod3) 可得，存在整数$k_1$，使得 $x = 3 k_1+ 2$，将它代入$ x≡1$( mod$5$) 得 $3 k_1 + 2≡1$( mod$5$) ，即
+由 $x≡2$( mod3) 可得，存在整数$k_1$，使得 $x = 3 k_1+ 2$，将它代入$x≡1$(mod$5$) 得 $3 k_1 + 2≡1$( mod$5$) ，即
 $3k_1≡4$( mod$5$) ，解之得唯一整数解 $k_1 ≡3$ ( mod$5$)。
-因而存在整数 $k_2$，使得 $k_1 = 5k_2 + 3$，代入$ x = 3k_1 + 2$
-可得 $x = 15k2 + 11$。
+因而存在整数 $k_2$，使得 $k_1 = 5k_2 + 3$，代入$x=3k_1+2$
+可得 $x=15k2+11$。
 
-将$ x = 15k_2 + 11$ 代 入 $x ≡
+将$x=15k_2+11$ 代入$x ≡
 6$( mod$7$) ，得 $15k_2 + 11 ≡ 6$ ( mod$7$ ) ，即 $15k_2 ≡
-2$( mod$7$) ，解之得唯一整数解 $k_2≡2$( mod$7$) 。 因而存
-在整数 $k_3$，使得$ k_2 = 7k_3 + 2$。将 $k_2 = 7k_3 + 2$ 代入$ x =15k_2 + 11 $可得，$x = 105k_3 + 41$。则当 $k_3 = 0$ 时，$x_{min} =41$，故所求的最小正整数是 $41$
+2$( mod$7$) ，解之得唯一整数解 $k_2≡2$( mod$7$) 。 因而存在整数 $k_3$，使得$k_2=7k_3+2$。
+将$k_2=7k_3+2$代入$x=15k_2+11$可得，$x=105k_3+41$。则当$k_3=0$ 时，$x_{min}=41$，故所求的最小正整数是$41$
 
 解法二:下面采用中国剩余定理来求解．
-由题意设所求之数为$ x$，可得 $x ≡
-2$( mod$3$) ，$x≡1$( mod$5$) ，$x≡6$( mod$7$)。
+由题意设所求之数为$x$，可得$x≡
+2$(mod$3$) ，$x≡1$(mod$5$) ，$x≡6$(mod$7$)。
 
-不妨令 $b_1 = 2$，$b_2 = 1，b_3 = 6，m_1 = 3，m_2 = 5，m_3 = 7，$则 $m = m_1 m_2 m_3= 105$，$M_1 = m_2 m_3 = 35$，$M_2 = m_1 m_3 = 21，$M_3 = m_1 m_2
-= 15。$ 解 $35M'
-1≡1 $( mod$3$ ) ，$得 $M'
-1≡2$ ( mod$3$ ) ; 解
-$21M_2'≡1$( mod$5$) ，得 $M'
-2≡ 1 $( mod$5$ ) ; 解$ 15M'
-3≡1$( mod$7$) ，得$ M3
-'≡1$( mod7) ，
+不妨令 $b_1=2$，$b_2=1，b_3=6，m_1=3，m_2=5，m_3=7，$ 则 $m=m_1 m_2 m_3=105$，$M_1=m_2 m_3=35$，$M_2=m_1 m_3=21，$ $M_3=m_1 m_2=15。$ 
+
+解 $35M'_1≡1$(mod$3$)， 得 $M'_1≡2$(mod$3$) ; 
+解$21M'_2≡1$( mod$5$) ，得 $M'_2≡1$(mod$5$) ; 
+解$15M'_3≡1$( mod$7$) ，得 $M'_3≡1$(mod$7$) ，
 
 因而原同余式组有唯一
 整数解 $x≡ \sum_{i =1}^{3}
