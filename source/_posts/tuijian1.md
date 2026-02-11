@@ -96,14 +96,14 @@ $$
 这个叫做行列式：
 $$
 \begin{vmatrix}
- a & b \\
+ a & b \\\\
  c & d
 \end{vmatrix}
 $$
 规定这个二行二列行列式有这样的运算：
 $$
 \begin{vmatrix}
- a & b \\
+ a & b \\\\
  c & d
 \end{vmatrix}
 =ad-cb
@@ -111,7 +111,7 @@ $$
 这个叫做矩阵：
 $$
 \begin{bmatrix}
- a & b\\
+ a & b\\\\
  c & d
 \end{bmatrix}
 $$
@@ -130,11 +130,11 @@ $$
 Step1:构造一个Hessian矩阵
 $$
 H=\begin{bmatrix}
-  \frac{\partial^2 L}{\partial a^2}  &  \frac{\partial^2 L}{\partial a\partial b} \\
+  \frac{\partial^2 L}{\partial a^2}  &  \frac{\partial^2 L}{\partial a\partial b} \\\\
   \frac{\partial^2 L}{\partial b\partial a}& \frac{\partial^2 L}{\partial b^2}
 \end{bmatrix}
 =\begin{bmatrix}
-  -\frac{1}{4}(a+1)^{-\frac{3}{2}}  &  0 \\
+  -\frac{1}{4}(a+1)^{-\frac{3}{2}}  &  0 \\\\
   0& -\frac{1}{2}(b+2)^{-\frac{3}{2}}
 \end{bmatrix}
 $$
@@ -147,11 +147,11 @@ Step2:计算约束梯度 $\nabla g$
 那么其梯度为
 $$
 \nabla g=\begin{bmatrix}
- \frac{\partial g}{\partial a} \\
+ \frac{\partial g}{\partial a} \\\\
 \frac{\partial g}{\partial b} 
 \end{bmatrix}
 =\begin{bmatrix}
- 1 \\
+ 1 \\\\
 1 
 \end{bmatrix}
 $$
@@ -166,7 +166,7 @@ $$
  1 & 1
 \end{bmatrix}
 \begin{bmatrix}
-d_1 \\
+d_1 \\\\
 d_2
 \end{bmatrix} 
 = d_1 + d_2 = 0
@@ -176,7 +176,7 @@ $$
 所以$Z$可以写成
 $$
 Z=\begin{bmatrix}
-1 \\
+1 \\\\
 -1
 \end{bmatrix}
 $$
@@ -187,7 +187,7 @@ H_{red}=Z^T(HZ)=
  1 & -1
 \end{bmatrix}
 \begin{bmatrix}
- -\frac{1}{4}(a+1)^{-\frac{3}{2}} \\ \frac{1}{2}(b+2)^{-\frac{3}{2}}
+ -\frac{1}{4}(a+1)^{-\frac{3}{2}} \\\\ \frac{1}{2}(b+2)^{-\frac{3}{2}}
 \end{bmatrix}
 =-\frac{1}{4}(a+1)^{-\frac{3}{2}}-\frac{1}{2}(b+2)^{-\frac{3}{2}}
 $$
