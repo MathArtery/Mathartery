@@ -1,6 +1,3 @@
-# ParticleX Configuration
-# https://github.com/theme-particlex/hexo-theme-particlex
-
 # Avatar image
 avatar: /images/avatar.jpg
 
@@ -45,6 +42,26 @@ menu:
         theme: solid
         link: /tags
 
+# --------------------------------------
+# Code Blocks Settings
+# --------------------------------------
+
+code_blocks:
+  # Code block theme: darker / pale night / light / ocean / false
+  theme: light
+  macStyle: false
+  # Code block height limit (unit: px)
+  height_limit: false
+  word_wrap: false
+
+  # Toolbar
+  copy: true
+  language: true
+  # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
+  shrink: false
+  fullpage: false
+
+  
 # Side info card
 card:
     enable: true
@@ -55,6 +72,12 @@ card:
     friendLinks:
         MathArtery: https://mathartery.github.io/Mathartery/
         宝贝回家: https://www.baobeihuijia.com/bbhj/
+
+# Social media links
+# Formal:
+#   icon: link || the description || color
+social:
+  # fas fa-envelope: mailto:mathdaily1@outlook.com || Email || '#4a7dbe'
 
 # Footer info
 footer:
