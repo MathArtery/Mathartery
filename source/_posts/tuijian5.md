@@ -8,8 +8,7 @@ mathjax: true
 <p style="text-align: center;">
 <span style="color:#9966CC">欢迎关注MathArtery，我们将以严谨的学术态度为您分享数学论文</span>
 </p>
-它将对整数性质、方程求解、组合优化等问题，以另一种方式简洁而严谨地求解——
-题记
+它数学思想方法往往隐身于知识的发生、发展与应用过程之中,以数学知识为载体,通过具体问题的分析与解决得以“显化”——题记
 <!-- more -->
 <p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
@@ -19,6 +18,7 @@ mathjax: true
 
 <img src="/Mathartery/source/tupian/2026-02-11 204533.png" alt="论文第一页" width="500">
 
+<p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">摘要</span>
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
@@ -114,8 +114,6 @@ $$
 
 
 
-
-
 <p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">评注</span>
@@ -124,7 +122,9 @@ $$
 
 <img src="/Mathartery/source/tupian/2026-02-11 222500.png" alt="题目" width="500">
 
-我们可以这样想,三次函数在复数域上有三个根(计入重根).如果它是实系数多项式,那么虚根必然会成对出现,即成对的虚根互为共轭复数.要是存在虚根,那虚根和它的共轭虚根就已经是两个根了,再加上一个实根,就会有三个不同的根,这和“恰有两个不同实数零点”不符.所以,所有根都只能是实根.那三个实根怎么会只有两个不同的零点呢？显然,其中必然有一个根是二重根,另一个是单根,而且这两个根不相等.也就是说,三次函数恰有两个不同实数零点,等价于它存在一个二重实根和一个异于该重根的单实根.这个结论正是我们解决上述三次函数零点问题的重要基础.
+我们可以这样想,三次函数在复数域上有三个根(计入重根).如果它是实系数多项式,那么虚根必然会成对出现,即成对的虚根互为共轭复数.要是存在虚根,那虚根和它的共轭虚根就已经是两个根了,再加上一个实根,就会有三个不同的根,这和“恰有两个不同实数零点”不符.所以,所有根都只能是实根.
+
+那三个实根怎么会只有两个不同的零点呢？显然,其中必然有一个根是二重根,另一个是单根,而且这两个根不相等.也就是说,三次函数恰有两个不同实数零点,等价于它存在一个二重实根和一个异于该重根的单实根.这个结论正是我们解决上述三次函数零点问题的重要基础.
 <p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">论文来源</span>
