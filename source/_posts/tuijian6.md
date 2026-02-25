@@ -10,6 +10,8 @@ mathjax: true
 <span style="color:#9966CC">欢迎关注MathArtery，我们将以严谨的学术态度为您分享数学论文</span>
 </p>
 
+<!-- more -->
+
 <p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">论文第一页</span>

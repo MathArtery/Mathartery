@@ -11,6 +11,9 @@ mathjax: true
 </p>
 
 > 最快勇士能否追上先行的乌龟，当距离被无穷的分段建起沟壑，在时间被无限分割的脚步中，这似乎是一场注定失败的追逐——题记
+
+<!-- more -->
+
 <p style="text-align: center;font-size: 20px">
   <span style="display: inline-block; border-top: 2px solid #9966CC; width: 70px; vertical-align: middle;"></span>
   <span style="display: inline-block; margin: 0 15px; font-size: 18px; color: #333; font-weight: 500;">论文第一页</span>
